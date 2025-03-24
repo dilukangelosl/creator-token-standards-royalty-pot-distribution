@@ -1,0 +1,49 @@
+{
+  "name": "@limitbreak/erc721c-royalty-pot-distribution",
+  "version": "1.0.0",
+  "description": "ERC721C Royalty Pot Distribution - Flexible royalty distribution system for NFT projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "forge test",
+    "build": "forge build",
+    "lint": "solhint 'src/**/*.sol'",
+    "format": "forge fmt",
+    "coverage": "forge coverage",
+    "docs": "forge doc",
+    "deploy:testnet": "forge script script/Deploy.s.sol:Deploy --rpc-url $TESTNET_RPC --broadcast --verify",
+    "deploy:mainnet": "forge script script/Deploy.s.sol:Deploy --rpc-url $MAINNET_RPC --broadcast --verify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limitbreak/creator-token-standards.git"
+  },
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "solidity",
+    "erc721",
+    "nft",
+    "royalties",
+    "distribution"
+  ],
+  "author": "LimitBreak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limitbreak/creator-token-standards/issues"
+  },
+  "homepage": "https://github.com/limitbreak/creator-token-standards#readme",
+  "devDependencies": {
+    "solhint": "^3.4.0"
+  },
+  "peerDependencies": {
+    "@openzeppelin/contracts": "^4.9.0"
+  },
+  "files": [
+    "src/",
+    "artifacts/",
+    "docs/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
